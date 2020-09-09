@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  background-color: #101820FF;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0px auto;
+  padding: 0px 30px;
+}
+header {
+  text-align : center;
+}
+header>div {
+  display: inline-block;
+  align-items: center;
+  margin: 2em auto 1em auto;
+}
+
+header div .fa-github {
+  color: #F2AA4CFF;
+  font-size: 8em;
+  margin-bottom: 0.2em;
+}
+
+header p {
+  text-align: center;
+  font-size: 2em;
+  color: #fff;
+  margin-bottom: 2em;
+}
+
+h1, h2 {
+  color: #F2AA4CFF;
+}
+
+h1 {
+  font-family: 'Yatra One', cursive;
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.3em;
+  font-weight: 800;
+}
+input, button {
+  outline: 0;
+  border: 0;
+  background: transparent;
+}
+
+input {
+  border: 2px solid #F2AA4CFF;
+  padding: 10px 15px;
+  font-size: 1em;
+  border-radius: 30px;
+}
+
+form {
+  margin: 0px auto;
+  text-align: center;
+}
+
+
+button {
+  cursor: pointer;
+  background-color: #F2AA4CFF;
+  color: white;
+  font-size: 1em;
+  padding: 0.5em 1em;
+  margin-left: 30px;
+  border-radius: 30px;
+}
+
+::placeholder {
+  color: white;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2.5em;
+  padding: 0.9em 0px;
+  margin: 60px auto;
+  place-items: center;
+  border: 1px solid khaki;
+
+}
+
+.details h2 span {
+  color: white;
+  margin-left: 20px;
+}
+
+.image {
+  text-align: center;
+}
+
+.main__image {
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+  margin: 2em auto;
+}
+figcaption {
+  color: #f7f7f7;
+  font-size: 20px;
+}
+
+a {
+  color: white;
+}
+
+@media (max-width : 600px) {
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+ header p {
+    font-weight : 400;
+    font-size: 1em;
+  }
+  .container {
+    width: 100%;
+    padding: 0px 30px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  button {
+    margin-left: 0px;
+    margin-top: 1.3em;
+  }
+
+  .details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0.9em 1em;
+  }
+}
